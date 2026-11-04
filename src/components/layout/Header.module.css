@@ -1,0 +1,99 @@
+.header {
+    background-color: var(--color-sumi);
+    color: var(--color-washi);
+    padding: 0.7rem;
+    
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.brand {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-washi);
+    color: var(--color-sumi);
+    height: 3rem;
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    gap: 0.3rem;
+}
+
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.searchInput {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    background-color: transparent;
+    color: var(--color-sumi);
+    border: none;
+    padding: 0 0.5rem;
+}
+
+.searchButton {
+    flex-shrink: 0;
+    height: 100%;
+    padding: 0 1rem;
+    background-color: var(--color-urushi);
+    color: var(--color-text-light);
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease
+}
+
+.searchInput:focus-visible,
+.searchButton:focus-visible{
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+
+.searchButton:hover  {
+    background-color: var(--color-moss);
+}
+
+
+.navigation {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0.7rem 0.3rem
+}
+
+
+.navLabel:hover  {
+   color: var(--color-text-light);
+   font-weight: 600;
+}
+
