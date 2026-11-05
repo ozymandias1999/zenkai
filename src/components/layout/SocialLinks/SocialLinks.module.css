@@ -1,0 +1,14 @@
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socialLinks a {
+    color: var(--color-washi);
+    transition: color 0.2s ease;
+}
+
+.socialLinks a:hover {
+    color: var(--color-gold);
+}

@@ -1,0 +1,136 @@
+.footer {
+    background-color: var(--color-sumi);
+    color: var(--color-washi);
+    padding: 0.7rem;
+}
+
+.footerContainer {
+    width: 100%;
+}
+
+.footerBrand h2{
+    font-size: 3rem;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    
+}
+
+.footerNavigation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center
+    
+}
+
+.footerSection {
+    text-align: left;
+    width: fit-content
+}
+
+.footerSection ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+
+.footerSection h3 {
+    color: var(--color-text-light);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem
+}
+
+.footerSection a:hover {
+    color:var(--color-text-light);
+    font-weight: 500;
+    transition: color 1s ease
+}
+
+
+.paymentLogos {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    column-gap: 2rem;
+}
+
+.paymentLogos img {
+    width: 60px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+.footerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footerBottom > div:first-child {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media( max-width: 768px) {
+
+    .footerNavigation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 2rem;  
+    justify-items: start;  
+    }
+
+    .footerBottom {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0.5rem;
+    }
+
+    .paymentMethods h3{
+        text-align: center;
+    }
+
+    .paymentLogos {
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .footerBrand {
+        text-align: center;
+    }
+
+    .footerNavigation {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    .footerSection {
+        width: fit-content;
+    }
+
+    .footerSection ul {
+        align-items: flex-start;
+    }
+
+    .footerBottom {
+        align-items: center;
+        text-align: center;
+        gap: 0.75rem;
+    }
+}
