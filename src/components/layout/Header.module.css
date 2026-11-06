@@ -99,6 +99,39 @@
    font-weight: 600;
 }
 
+.headerIcon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+
+    background: transparent;
+    color: var(--color-washi);
+
+    border: none;
+    border-radius: 0.4rem;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 
+        color 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.headerIcon:hover {
+    color: var(--color-gold-200);
+    background-color: rgba(215, 197, 164, 0.08);
+}
+
+.headerIcon:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+}
+
 @media (max-width: 768px) {
     .headerContainer {
         flex-wrap: wrap;

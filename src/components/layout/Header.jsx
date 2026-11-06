@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css"
+import { ShoppingCart, Heart, UserRound } from "lucide-react";
 
 
 export default function Header () {
@@ -28,9 +29,15 @@ export default function Header () {
                 
                 
                 <div className={styles.headerActions}>
-                    <button aria-label="Cuenta">a</button>
-                    <button aria-label="Favoritos">b</button>
-                    <Link to="/cart">Carrito</Link>
+                    <button className={styles.headerIcon} aria-label="Cuenta" type="button">
+                        <UserRound  size={23} strokeWidth={1.7}/>
+                    </button>
+                    <button className={styles.headerIcon} aria-label="Favoritos" type="button">
+                        <Heart  size={23} strokeWidth={1.7}/>
+                    </button>
+                    <Link className={styles.headerIcon} to="/cart">
+                        <ShoppingCart  size={23} strokeWidth={1.7}/>
+                    </Link>
                 </div>
                 
 
