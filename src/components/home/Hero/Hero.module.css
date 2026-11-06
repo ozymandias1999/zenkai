@@ -1,0 +1,64 @@
+.hero {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-washi);
+  color: var(--color-text-light);
+}
+
+/* Imagen */
+.heroBackground {
+  aspect-ratio: 16 / 8;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
+  z-index: 0;
+}
+
+/* Composición */
+.heroComposition {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 7.5%;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero {
+    aspect-ratio: 16 / 8;
+  }
+
+  .heroBackground {
+    object-position: center 50%;
+  }
+
+  .heroComposition {
+    padding: 3%;
+  }
+}
+
+/* Móvil */
+@media (max-width: 640px) {
+  .hero {
+    aspect-ratio: 4 / 5;
+    min-height: 480px;
+  }
+
+  .heroBackground {
+    object-position: center 10%;
+  }
+
+  .heroComposition {
+    justify-content: flex-end;
+    padding: 1.5rem;
+  }
+}

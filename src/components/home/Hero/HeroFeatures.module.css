@@ -1,0 +1,73 @@
+
+
+/* Beneficios */
+.heroFeatures {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0;
+  color: var(--color-neutral-50);
+}
+
+
+.heroFeatures li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0 1.5rem;
+
+  border-right: 1px solid var(--color-neutral-600);
+}
+
+/* El primer elemento no necesita padding izquierdo */
+.heroFeatures li:first-child {
+  padding-left: 0;
+}
+
+/* El último elemento no necesita separador */
+.heroFeatures li:last-child {
+  border-right: none;
+}
+
+/* Iconos */
+.heroFeatures svg {
+  flex-shrink: 0;
+  color: var(--color-washi-200);
+}
+
+/* Textos */
+.heroFeatures p {
+  font-family: "Lato", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  margin: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .heroFeatures li {
+    padding: 0 0.8rem;
+    gap: 0.4rem;
+  }
+
+  .heroFeatures p {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroFeatures {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .heroFeatures li {
+    padding: 0;
+    border-right: none;
+  }
+}

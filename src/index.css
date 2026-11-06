@@ -1,19 +1,120 @@
+
+
 :root {
-  /* Brand colors */
+
+  /* =================================
+     BRAND COLORS
+  ================================= */
+
   --color-sumi: #29241e;
   --color-urushi: #8d302d;
   --color-washi: #d7c5a4;
   --color-gold: #b18a49;
   --color-moss: #526052;
 
-  /* Surfaces */
-  --color-background: #f5eee2;
-  --color-surface: #fffaf1;
+  /* =================================
+     NEUTRALS
+  ================================= */
 
-  /* Text */
-  --color-text: #29241e;
-  --color-text-muted: #756b5d;
-  --color-text-light: #f5eee2;
+  --color-neutral-50: #fffcf7;
+  --color-neutral-100: #f5eee2;
+  --color-neutral-200: #e9dfd0;
+  --color-neutral-300: #d5c8b6;
+  --color-neutral-400: #b5a795;
+  --color-neutral-500: #918474;
+  --color-neutral-600: #756b5d;
+  --color-neutral-700: #574e43;
+  --color-neutral-800: #3d352d;
+  --color-neutral-900: #29241e;
+
+  /* =================================
+     URUSHI SCALE
+  ================================= */
+
+  --color-urushi-50: #f7e9e7;
+  --color-urushi-100: #ebcbc8;
+  --color-urushi-200: #d9a19d;
+  --color-urushi-400: #b9635e;
+  --color-urushi-600: #8d302d;
+  --color-urushi-700: #702522;
+  --color-urushi-900: #4c1918;
+
+  /* =================================
+     MOSS SCALE
+  ================================= */
+
+  --color-moss-50: #edf1eb;
+  --color-moss-100: #d5dfd1;
+  --color-moss-200: #aabda5;
+  --color-moss-400: #789076;
+  --color-moss-600: #526052;
+  --color-moss-700: #3d493e;
+  --color-moss-900: #263029;
+
+  /* =================================
+     WASHI SCALE
+  ================================= */
+
+  --color-washi-50: #fffcf7;
+  --color-washi-100: #f5eee2;
+  --color-washi-200: #e9dcc5;
+  --color-washi-400: #d7c5a4;
+  --color-washi-500: #bca580;
+  --color-washi-700: #97815e;
+  --color-washi-900: #64533b;
+
+  /* =================================
+     GOLD SCALE
+  ================================= */
+
+  --color-gold-50: #f8f1e3;
+  --color-gold-100: #eddfbd;
+  --color-gold-200: #dbc18b;
+  --color-gold-400: #c39e5b;
+  --color-gold-600: #b18a49;
+  --color-gold-700: #8a6836;
+  --color-gold-900: #594323;
+
+  /* =================================
+     SURFACES
+  ================================= */
+
+  --color-background: var(--color-neutral-100);
+  --color-surface: var(--color-neutral-50);
+  --color-surface-alt: var(--color-washi-200);
+  --color-surface-dark: var(--color-sumi);
+
+  /* =================================
+     TEXT
+  ================================= */
+
+  --color-text: var(--color-sumi);
+  --color-text-muted: var(--color-neutral-600);
+  --color-text-light: var(--color-neutral-100);
+  --color-text-on-primary: #ffffff;
+
+  /* =================================
+     INTERACTIVE
+  ================================= */
+
+  --color-primary: var(--color-urushi-600);
+  --color-primary-hover: var(--color-urushi-700);
+  --color-primary-soft: var(--color-urushi-50);
+
+  --color-secondary: var(--color-moss-600);
+  --color-secondary-hover: var(--color-moss-700);
+
+  --color-border: var(--color-neutral-300);
+  --color-border-strong: var(--color-neutral-500);
+
+  /* =================================
+     FEEDBACK
+  ================================= */
+
+  --color-success: #526052;
+  --color-warning: #9a6b24;
+  --color-error: #a3312d;
+  --color-info: #526b83;
 
   /* Typography */
   font-family: Inter, system-ui, sans-serif;

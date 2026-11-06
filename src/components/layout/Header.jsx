@@ -9,6 +9,15 @@ export default function Header () {
                 <div className={styles.brand}>
                     <Link to="/">ZENKAI</Link>
                 </div >
+
+                <nav className={styles.navigation}>
+                    <Link className={styles.navLabel} to="/">Home</Link>
+                    <Link className={styles.navLabel} to="/products">Figuras</Link>
+                    <Link className={styles.navLabel} to="/products">Manga</Link>
+                    <Link className={styles.navLabel} to="/products">Accesorios</Link>
+                    <Link className={styles.navLabel} to="/products">Merchandising</Link>
+                    <Link className={styles.navLabel} to="/products">Ofertars</Link>
+                </nav>
                 <form className={styles.searchForm} role="search" aria-label="Buscar productos">
                     <label className={styles.visuallyHidden} htmlFor="product-search">
                         Buscar
@@ -16,6 +25,7 @@ export default function Header () {
                     <input className={styles.searchInput} type="search" id="product-search" placeholder="Buscar productos, series o categorias..."/>
                     <button className={styles.searchButton}  type="submit">Buscar</button>
                 </form>
+                
                 
                 <div className={styles.headerActions}>
                     <button aria-label="Cuenta">a</button>
@@ -25,15 +35,7 @@ export default function Header () {
                 
 
             </div >
-
-            <nav className={styles.navigation}>
-                <Link className={styles.navLabel} to="/">Home</Link>
-                <Link className={styles.navLabel} to="/products">Figuras</Link>
-                <Link className={styles.navLabel} to="/products">Manga</Link>
-                <Link className={styles.navLabel} to="/products">Accesorios</Link>
-                <Link className={styles.navLabel} to="/products">Merchandising</Link>
-                <Link className={styles.navLabel} to="/products">Ofertars</Link>
-            </nav>
+            
         </header>
     )
 }

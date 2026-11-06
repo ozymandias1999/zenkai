@@ -92,7 +92,7 @@ export default function Footer () {
                 <div className={styles.paymentMethods}>
                     <h3>Métodos de pago</h3>
                     <div className={styles.paymentLogos}>
-                    <img src="public/images/payments/visa.svg" alt="Visa" />
+                    <img src="public/images/payments/visa.png" alt="Visa"/>
                     <img src="public/images/payments/mastercard.svg" alt="Mastercard" />
                     <img src="public/images/payments/yape.svg" alt="Yape" />
                     <img src="public/images/payments/plin.png" alt="Plin" />
