@@ -66,8 +66,44 @@
     gap: 0.8rem;
   }
 
-  .heroFeatures li {
+  .heroFeatures {
     padding: 0;
+    font-size: 0.5rem;
     border-right: none;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .heroFeatures li{
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .heroFeatures {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    row-gap: 0.65rem;
+  }
+
+  .heroFeatures li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .heroFeatures li:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heroFeatures li svg {
+    flex-shrink: 0;
   }
 }

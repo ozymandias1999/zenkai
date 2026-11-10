@@ -115,12 +115,41 @@
 }
 
 @media (max-width: 640px) {
+
+  .heroContentActions svg {
+    display: none;
+  }
+
+  .heroContentActions .aboutUs{
+    padding: 0.9rem 1.8rem;
+  }
+
+
+  .heroContentDescription h5,
+  .heroContentDescription h2,
+  .heroContentDescription p {
+    display: none;
+  }
+
+  
     .heroContent {
     max-width: 100%;
+    gap: 1rem;
+    
   }
 
   .heroContentDescription h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    margin: 0 0 1rem;
+    width: 100%;
+    margin-bottom: 7.5rem;
+
+  }
+
+   .heroContentActions {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
   }
 
 }

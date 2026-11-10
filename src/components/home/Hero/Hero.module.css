@@ -31,34 +31,71 @@
   padding: 7.5%;
 }
 
-/* Tablet */
-@media (max-width: 1024px) {
+/* Pantallas intermedias */
+@media (min-width: 641px) and (max-width: 1200px) {
   .hero {
-    aspect-ratio: 16 / 8;
+    aspect-ratio: auto;
+    height: clamp(500px, 54vw, 620px);
   }
+
+   .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.30);
+    z-index: 1;
+    pointer-events: none;
+  }
+
+
 
   .heroBackground {
     object-position: center 50%;
   }
 
   .heroComposition {
-    padding: 3%;
+    justify-content: space-between;
+    padding: 4% 5%;
+  }
+
+    .heroComposition {
+    z-index: 2;
   }
 }
 
+
+
+
 /* Móvil */
 @media (max-width: 640px) {
+
+
   .hero {
     aspect-ratio: 4 / 5;
     min-height: 480px;
   }
 
   .heroBackground {
-    object-position: center 10%;
+    object-position: center ;
+  }
+
+   .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: 1;
+    pointer-events: none;
   }
 
   .heroComposition {
     justify-content: flex-end;
-    padding: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+
+  }
+
+  .heroComposition {
+    z-index: 2;
   }
 }
