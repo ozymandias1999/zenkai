@@ -13,18 +13,17 @@ import NotFoundPage from "./pages/NotFoundPage"
 
 
 export default function App() {
-
   return (
-    <Routes>
-      <Route element={<MainLayout/>}>
-        <Route path="/" element={<HomePage/>}/>
-        <Route path="/products" element={<ProductsPage/>}/>
-        <Route path="/products/:id" element={<ProductDetailPage/>}/>
-        <Route path="/cart" element={<CartPage/>}/>
-        <Route path="/checkout" element={<CheckoutPage/>}/>
-        <Route path="*" element={<NotFoundPage/>}/>
-      </Route>
-    </Routes>
+  <Routes>
+    <Route element={<MainLayout/>}>
+      <Route path="/" element={<HomePage/>}/>
+      <Route path="/products" element={<ProductsPage/>}/>
+      <Route path="/products/:id" element={<ProductDetailPage/>}/>
+      <Route path="/cart" element={<CartPage/>}/>
+      <Route path="/checkout" element={<CheckoutPage/>}/>
+      <Route path="*" element={<NotFoundPage/>}/>
+    </Route>
+  </Routes>
   )
 }
 
